@@ -1,0 +1,1 @@
+# vividedge-footer-dark
