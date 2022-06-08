@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Footer (Dark)</title>
+    <title>Email Footer</title>
 </head>
 
 <body>
@@ -184,8 +184,6 @@
 
                 padding-top: 2em; padding-bottom:2em" class="new_wrap">
                 <style>
-
-
                     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
                     @font-face {
@@ -209,17 +207,24 @@
                         src: url("https://exw.f21.myftpupload.com/vfonts/ClioSemiBold-SemiBold.otf") format("opentype");
                         font-weight: 600;
                     }
-
-
                 </style>
 
-                <div class="col-2" style=" float: left;width: 50%; margin:4em 0; text-align: center;">
+                <div class="col-2" style=" float: left;width: 55%; margin-bottom:2em;margin-top: 1em; ">
+                    <p id="e_name"
+                        style="font-size: 1.8rem;font-weight: 600;line-height: 1; margin:0; margin-left: 3rem; font-family: Clio , sans-serif;text-align: left"
+                        x-text="name"> Bhaskar
+                        Dasari
+                </p>
+                    
+                    <p id="e_role" style="font-weight: 300; font-size: 0.75rem; margin-top:.5em;margin-left: 3rem; text-transform: uppercase;text-align: left;"
+                        x-text="role">BUSINESS TRANSFORMATION ADVISOR
+            </p>
 
                     <a href="https://www.vivid-edge.com/" target="_blank">
                         <img src="https://raw.githubusercontent.com/meldweare/vividedge-res/main/Logo.png" id="logo"
-                            alt="logo" style="width: 100%;  max-width: 280px;">
+                            alt="logo" style="width: 100%;  max-width: 280px; padding-left: 3rem;">
                     </a>
-                    <div id="web_link" style=" 
+                    <!-- <div id="web_link" style=" 
 
                     text-decoration: none !important;
                     font-size: 100%;
@@ -228,26 +233,26 @@
                     margin-top: 0em;
                     margin-left: 3.5em;
                     ">
-                        <!-- <p style="font-size: 75%;font-weight: 700;">VISIT US</p> -->
+               
                         <a href="https://www.vivid-edge.com/" target="_blank"
                             style="color: white; line-height: 1; ">www.vivid-edge.com</a>
-                    </div>
+                    </div> -->
 
                 </div>
 
                 <div class="col-1" style="padding: 0 3em;">
                     <div style="margin-top: 1.0em;margin-left: 0.5em;">
-                        <span id="e_name"
+                        <!-- <span id="e_name"
                             style="font-size: 1.8rem;font-weight: 600;line-height: 1; font-family: Clio , sans-serif;"
                             x-text="name"> Bhaskar
                             Dasari
                         </span>
-                        <br />
-                        <span id="e_role" style="font-weight: 300; font-size: 0.75rem; text-transform: uppercase;"
+                        <br /> -->
+                        <!-- <span id="e_role" style="font-weight: 300; font-size: 0.75rem; text-transform: uppercase;"
                             x-text="role">BUSINESS TRANSFORMATION ADVISOR
-                        </span>
+                        </span> -->
 
-                        <div class="cf" style=" padding-top: 1.25em;font-size: 0.75rem; line-height: 2.5;">
+                        <div class="cf" style=" font-size: 0.85rem; line-height: 2.5;">
 
 
                             <img src="https://github.com/meldweare/vividedge-res/blob/main/Icons/Phone.png?raw=true"
@@ -275,6 +280,7 @@
 
                                 <br />
                             </span>
+
                             <div style="display: flex;">
                                 <div style="width:fit-content"> <img
                                         src="https://github.com/meldweare/vividedge-res/blob/main/Icons/Location.png?raw=true"
@@ -282,10 +288,22 @@
                                         vertical-align: middle;">
                                 </div>
 
-                                <p style="margin-left:8px ;margin-top: 6px; line-height: 1.2;padding-right: 2em;">
+                                <p style="margin-left:8px ;margin-top: 6px; line-height: 1.2;padding-right: 2em; margin-bottom: 0;">
                                     11710 Plaza
                                     America Drive STE 2000 Reston, VA – 20190 </p>
                             </div>
+
+                            
+                            <span>
+                                <img src="https://github.com/meldweare/vividedge-res/blob/main/Icons/Website.png?raw=true"
+                                    alt="" style="max-width: 2em;
+                                vertical-align: middle;  ">
+                                <span style="margin-left:6px ;">
+                                    <a href="https://www.vivid-edge.com/" target="_blank"
+                                        style="color: white; text-decoration: none; ">www.vivid-edge.com</a></span>
+
+                                <br />
+                            </span>
 
                         </div>
 
@@ -329,16 +347,17 @@
             <label for="email">Email</label>
             <input type="email" name="email" id="em_email" x-model="email">
 
-            <label for="fax">Fax</label>
-            <input type="fax" name="fax" id="em_fax" x-model="fax">
+
+            <!-- <label for="fax">Fax</label>
+            <input type="fax" name="fax" id="em_fax" x-model="fax"> -->
 
             <!-- <label for="addy">Address</label>
             <input type="text" name="addy" id="em_addy" x-model="addy"> -->
 
 
-<!-- 
+            <!-- 
             <button @click='copyFooter()'>Select Email Signature</button> -->
-          
+
 
         </div>
     </div>
